@@ -1,0 +1,71 @@
+.main-box {
+  display: flex;
+  min-height: 100vh;
+}
+
+.aside {
+  background: linear-gradient(330.3deg, #0E0065 13.23%, #05003A 77.87%);
+  padding: 16px 14px 27px;
+  max-width: 109px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.aside-logo {
+  margin-bottom: 50px;
+}
+
+
+.aside-nav__item+.aside-nav__item {
+  margin-top: 30px;
+}
+
+.aside-nav__link,
+.aside-help__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: .7;
+  transition: all .2s;
+  .aside-nav__icon {
+    fill: transparent;
+    stroke: #fff;
+  }
+
+  &--active {
+    color: #00FFD9;
+    opacity: 1;
+
+    .aside-nav__name {
+      color: #00FFD9;
+    }
+
+    .aside-nav__icon {
+      stroke: #00FFD9;
+    }
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.aside-nav__name {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 13px;
+  text-align: center;
+  margin-top: 6px;
+  color: #fff;
+}
+
+.aside-help {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-grow: 1;
+}

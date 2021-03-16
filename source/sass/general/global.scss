@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #fff;
+  background: #EBEFF4;
   font-weight: 400;
   font-size: 14px;
   line-height: normal;
@@ -41,6 +41,7 @@ a {
 button {
   border: none;
   outline: none;
+  background-color: transparent;
   cursor: pointer;
 }
 
@@ -100,6 +101,20 @@ input[type=number] {
   transition: max-height 0.2s ease-out;
   z-index: 20;
 }
+
+.container {
+  max-width: 1660px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  max-width: 1950px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
 
 
 

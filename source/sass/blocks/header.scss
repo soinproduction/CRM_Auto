@@ -1,0 +1,153 @@
+header {
+  background-color: #fff;
+  padding: 21px 0 22px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-wrapper {
+  width: 100%;
+}
+
+.header-searh__icon {
+  fill: transparent;
+  opacity: .5;
+  transition: all .2s;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.header-searh {
+  max-width: 400px;
+}
+
+.header-searh__label {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.header-searh__input {
+  position: relative;
+  border: none;
+  height: auto;
+  padding-left: 40px;
+  font-family: Inter;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 130%;
+  color: #000000;
+  &::placeholder {
+    font-family: Inter;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 130%;
+    color: #919AA5;
+  }
+}
+
+.header-right {
+  max-width: 550px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-searh__btn {
+  position: absolute;
+  z-index: 10;
+  left: 0;
+}
+
+.header-right__icon {
+  fill: none;
+  stroke: #919AA5;
+  margin-right: 10px;
+}
+
+.header-right__link {
+  font-family: Inter;
+  font-weight: normal;
+  font-size: 14px;
+  color: #101820;
+  display: flex;
+  align-items: center;
+}
+
+.header-balance__arrow,
+.header-user__arrow {
+  fill: transparent;
+  margin-left: 8px;
+  transition: all .4s;
+}
+
+.header-user__user {
+  fill: transparent;
+  margin-right: 8px;
+}
+
+.header-balance__top {
+  display: flex;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+}
+
+.header-balance__title {
+  font-family: Inter;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #101820;
+}
+
+.header-balance__top.accordion__active {
+  .header-balance__arrow {
+    transform: scaleY(-1);
+  }
+}
+
+.header-user__top {
+  display: flex;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+}
+
+.header-user__title {
+  font-family: Inter;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 130%;
+  color: #101820;
+}
+
+.header-user__top.accordion__active {
+  .header-user__arrow {
+    transform: scaleY(-1);
+  }
+}
+
+.header-user__bottom, .header-balance__bottom {
+  position: absolute;
+  margin-top: 5px;
+}
+
+.header-dropdown {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #000000;
+  background-color: #fff;
+  border-radius: 4px;
+  height: 100%;
+}
