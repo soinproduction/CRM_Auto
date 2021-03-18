@@ -1,0 +1,23 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.footer__item {
+  display: flex;
+  align-items: center;
+}
+
+.footer__link + .footer__link {
+  margin-left: 35px;
+}
+
+.footer__link {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #919AA5;
+}

@@ -1,0 +1,1494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="Description" content=" default ">
+  <title>Auto card admin</title>
+  <script src="js/picturefill.min.js" async="async"></script>
+  <link rel="preload" href="fonts/Inter-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Inter-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+  <body>
+    <div class="container-fluid">
+      <div class="main-box">
+        <aside class="aside">
+          <div class="aside-logo">
+            <a href="#" class="aside-logo__link">
+              <svg width="81" height="86">
+                <use href="img/sprite/sprite.svg#logo"></use>
+              </svg>
+            </a>
+          </div>
+          <nav class="aside-nav">
+            <ul class="aside-nav__list">
+              <li class="aside-nav__item"><a href="#" class="aside-nav__link aside-nav__link--active">
+                <svg class="aside-nav__icon" width="25" height="19">
+                  <use href="img/sprite/sprite.svg#car"></use>
+                </svg>
+                <span class="aside-nav__name">
+                  Автомобили
+                </span>
+              </a></li>
+              <li class="aside-nav__item"><a href="#" class="aside-nav__link">
+                <svg class="aside-nav__icon" width="24" height="21">
+                  <use href="img/sprite/sprite.svg#users"></use>
+                </svg>
+                <span class="aside-nav__name">
+                  Пользователи
+                </span>
+              </a></li>
+              <li class="aside-nav__item"><a href="#" class="aside-nav__link">
+                <svg class="aside-nav__icon" width="25" height="19">
+                  <use href="img/sprite/sprite.svg#card"></use>
+                </svg>
+                <span class="aside-nav__name">
+                  Платежи
+                </span>
+              </a></li>
+              <li class="aside-nav__item"><a href="#" class="aside-nav__link">
+                <svg class="aside-nav__icon" width="21" height="25">
+                  <use href="img/sprite/sprite.svg#geo"></use>
+                </svg>
+                <span class="aside-nav__name">
+                  Location
+                </span>
+              </a></li>
+              <li class="aside-nav__item"><a href="#" class="aside-nav__link">
+                <svg class="aside-nav__icon" width="21" height="21">
+                  <use href="img/sprite/sprite.svg#sms"></use>
+                </svg>
+                <span class="aside-nav__name">
+                  Сообщения
+                </span>
+              </a></li>
+              <li class="aside-nav__item"><a href="#" class="aside-nav__link">
+                <svg class="aside-nav__icon" width="17" height="21">
+                  <use href="img/sprite/sprite.svg#book"></use>
+                </svg>
+                <span class="aside-nav__name">
+                  Booking
+                </span>
+              </a></li>
+            </ul>
+          </nav>
+          <div class="aside-help">
+            <a href="#" class="aside-help__link">
+              <svg class="aside-nav__icon" width="23" height="23">
+                <use href="img/sprite/sprite.svg#help"></use>
+              </svg>
+              <span class="aside-nav__name">
+                Помощь
+              </span>
+            </a>
+          </div>
+
+        </aside>
+        <div class="main-wrapper">
+          <header>
+            <div class="container">
+              <div class="header">
+                <div class="header-searh">
+                  <label class="header-searh__label">
+                    <button class="header-searh__btn">
+                      <svg class="header-searh__icon" width="20" height="21" >
+                        <use href="img/sprite/sprite.svg#searh"></use>
+                      </svg>
+                    </button>
+                    <input type="text" class="header-searh__input" placeholder="Поиск информации">
+                  </label>
+                </div>
+                <div class="header-right">
+                  <div class="header-right__support">
+                    <a href="#" class="header-right__link">
+                      <svg class="header-right__icon" width="23" height="23" >
+                        <use href="img/sprite/sprite.svg#help"></use>
+                      </svg>
+                      <span class="header-right__name">
+                        Поддержка
+                      </span>
+                    </a>
+                  </div>
+                  <div class="header-balance">
+                    <div class="header-balance__top accordion">
+                      <p class="header-balance__title">
+                        Балaнс:
+                        <span class="header-balance__value">
+                          343 988
+                        </span>
+                      </p>
+                      <svg class="header-balance__arrow" width="11" height="6"  >
+                        <use href="img/sprite/sprite.svg#down"></use>
+                      </svg>
+                    </div>
+                    <div class="header-balance__bottom panel">
+                      <div class="header-dropdown">
+                        <p class="header-balance__title">
+                          Балaнс:
+                          <span class="header-balance__value">
+                            343 988
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header-user">
+                    <div class="header-user__top accordion">
+                      <svg class="header-user__user" width="27" height="27">
+                        <use href="img/sprite/sprite.svg#user"></use>
+                      </svg>
+                      <p class="header-user__title">
+                        Максим Захарченко
+                      </p>
+                      <svg class="header-user__arrow" width="11" height="6">
+                        <use href="img/sprite/sprite.svg#down"></use>
+                      </svg>
+                    </div>
+                    <div class="header-user__bottom panel">
+                      <a href="#" class="header-dropdown">
+                          <svg class="header-user__user" width="27" height="27">
+                            <use href="img/sprite/sprite.svg#user"></use>
+                          </svg>
+                          <p class="header-user__title">
+                            Максим Захарченко
+                          </p>
+                      </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+          <section class="card-info">
+            <div class="container">
+              <div class="card-nav list-top">
+                <div class="info-left">
+                  <h1 class="all-title">
+                    Все предложения
+                  </h1>
+                  <a href="#" class="all-link">
+                    Заказы
+                  </a>
+                  <a href="#" class="all-link">
+                    Брони
+                  </a>
+                  <a href="#" class="all-link">
+                    Предложения
+                  </a>
+                  <a href="#" class="all-link">
+                    Проданные
+                  </a>
+                </div>
+                <div class="info-right--mode">
+                  <div class="custumer-buttons">
+                    <button class="custumer-buttons__btn custumer-buttons__btn--gradient">
+                      Новый автомобиль
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="list-bottom">
+                <div class="list-bottom__left">
+                  <div class="list-bottom__item">
+                    <div class="checkbox">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" checked>
+                        <span></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="list-bottom__item">
+                    <button class="delete-btn">
+                      <svg class="delete-btn__icon" width="20" height="23">
+                        <use href="img/sprite/sprite.svg#basket"></use>
+                      </svg>
+                      Удалить
+                    </button>
+                  </div>
+                  <div class="list-bottom__item">
+                    <button class="pen-btn">
+                      <svg class="pen-btn__icon" width="20" height="23">
+                        <use href="img/sprite/sprite.svg#pen"></use>
+                      </svg>
+                      Изменить
+                    </button>
+                  </div>
+                </div>
+                <div class="list-bottom__right">
+                  <div class="list-bottom__select">
+                    <div class="header-balance list-bottom__dropdown">
+                      <div class="header-balance__top accordion">
+                        <p class="header-balance__title">
+                          Любые параметры
+                        </p>
+                        <svg class="header-balance__arrow" width="11" height="6"  >
+                          <use href="img/sprite/sprite.svg#down"></use>
+                        </svg>
+                      </div>
+                      <div class="header-balance__bottom panel">
+                        <div class="header-dropdown">
+                          <p class="header-balance__title">
+                            параметры
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-bottom__select">
+                    <div class="select">
+                      <div class="select__header">
+                        <p class="select__tit">
+                          Упорядочить:
+                        </p>
+                        <span class="select__current">По дате</span>
+                          <svg class="select__icon__arrow" width="11" height="6">
+                            <use href="img/sprite/sprite.svg#down"></use>
+                          </svg>
+                      </div>
+                      <div class="select__body">
+                        <div class="select__wrapp">
+                          <div class="select__item" data-choice="choosen">По дате</div>
+                          <div class="select__item" data-choice="choosen">По дате</div>
+                          <div class="select__item" data-choice="choosen">По дате</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-bottom__select">
+                    <div class="header-balance list-bottom__dropdown">
+                      <div class="header-balance__top accordion">
+                        <p class="header-balance__title">
+                          столбцы
+                        </p>
+                        <svg class="header-balance__arrow" width="11" height="6"  >
+                          <use href="img/sprite/sprite.svg#down"></use>
+                        </svg>
+                      </div>
+                      <div class="header-balance__bottom panel">
+                        <div class="header-dropdown">
+                          <p class="header-balance__title">
+                            столбцы
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </section>
+          <section class="list-section">
+            <div class="container">
+              <div class="list-title">
+                  <h4 class="list-title__name">
+                    Sales Status
+                  </h4>
+                  <h4 class="list-title__name">
+                    Country
+                  </h4>
+                  <h4 class="list-title__name">
+                    Deal <br> Currency
+                  </h4>
+                  <h4 class="list-title__name">
+                    Market
+                  </h4>
+                  <h4 class="list-title__name">
+                    VAT Rate
+                  </h4>
+                  <h4 class="list-title__name">
+                    Company
+                  </h4>
+                  <h4 class="list-title__name">
+                    Dealership’s <br> Name
+                  </h4>
+                  <h4 class="list-title__name">
+                    Dealership’s <br> Location City
+                  </h4>
+                  <h4 class="list-title__name grid-width">
+                    Dealership’s <br> Location Address
+                  </h4>
+                  <h4 class="list-title__name">
+                    Brand
+                  </h4>
+                  <h4 class="list-title__name">
+                    Model
+                  </h4>
+                  <h4 class="list-title__name">
+                    Year <br> Model
+                  </h4>
+                  <h4 class="list-title__name">
+                    Exterior <br> Color
+                  </h4>
+                  <h4 class="list-title__name">
+                    Interior <br> Color
+                  </h4>
+                  <h4 class="list-title__name">
+                    Quantity
+                  </h4>
+                  <h4 class="list-title__name">
+                    Купить
+                  </h4>
+              </div>
+              <div class="list-box">
+                <div class="list-box__row">
+                  <div class="list-box__coll">
+                    <div class="checkbox">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" checked>
+                        <span></span>
+                      </label>
+                      <p class="status paid">
+                        Paid
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="list-box__coll">
+                     <span class="list-box__value">
+                       USA
+                     </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      USD
+                    </span>
+                 </div>
+
+                 <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Germany
+                    </span>
+                 </div>
+
+                 <div class="list-box__coll">
+                  <span class="list-box__value">
+                    19%
+                  </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                  <span class="list-box__value">
+                    WeltCar
+                  </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Directiory
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      San Francisco
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll grid-width">
+                    <span class="list-box__value">
+                      16th Ave, San Francisco, CA <br>
+                      94122, Соединенные Штаты
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Ford
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Mustang
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      2015
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      White
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Brown
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      1
+                    </span>
+                  </div>
+
+                <div class="list-box__coll">
+                  <button class="input-second-btn list-box__btn">
+                    Купить
+                  </button>
+                  <a href="#" class="list-box__morre">
+                    <svg width="6" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 3a3 3 0 11-6 0 3 3 0 016 0zM6 12a3 3 0 11-6 0 3 3 0 016 0zM6 21a3 3 0 11-6 0 3 3 0 016 0z" fill="#C7CED7"/>
+                    </svg>
+                  </a>
+                </div>
+
+                </div>
+                <div class="list-box__row">
+                  <div class="list-box__coll">
+                    <div class="checkbox">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" checked>
+                        <span></span>
+                      </label>
+                      <p class="status wait">
+                        Awaiting
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="list-box__coll">
+                     <span class="list-box__value">
+                       USA
+                     </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      USD
+                    </span>
+                 </div>
+
+                 <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Germany
+                    </span>
+                 </div>
+
+                 <div class="list-box__coll">
+                  <span class="list-box__value">
+                    19%
+                  </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                  <span class="list-box__value">
+                    WeltCar
+                  </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Directiory
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      San Francisco
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll grid-width">
+                    <span class="list-box__value">
+                      16th Ave, San Francisco, CA <br>
+                      94122, Соединенные Штаты
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Ford
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Mustang
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      2015
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      White
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Brown
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      1
+                    </span>
+                  </div>
+
+                <div class="list-box__coll">
+                  <button class="input-second-btn list-box__btn">
+                    Купить
+                  </button>
+                  <a href="#" class="list-box__morre">
+                    <svg width="6" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 3a3 3 0 11-6 0 3 3 0 016 0zM6 12a3 3 0 11-6 0 3 3 0 016 0zM6 21a3 3 0 11-6 0 3 3 0 016 0z" fill="#C7CED7"/>
+                    </svg>
+                  </a>
+                </div>
+
+                </div>
+                <div class="list-box__row">
+                  <div class="list-box__coll">
+                    <div class="checkbox">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" checked>
+                        <span></span>
+                      </label>
+                      <p class="status paid">
+                        Paid
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="list-box__coll">
+                     <span class="list-box__value">
+                       USA
+                     </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      USD
+                    </span>
+                 </div>
+
+                 <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Germany
+                    </span>
+                 </div>
+
+                 <div class="list-box__coll">
+                  <span class="list-box__value">
+                    19%
+                  </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                  <span class="list-box__value">
+                    WeltCar
+                  </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Directiory
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      San Francisco
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll grid-width">
+                    <span class="list-box__value">
+                      16th Ave, San Francisco, CA <br>
+                      94122, Соединенные Штаты
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Ford
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Mustang
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      2015
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      White
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Brown
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      1
+                    </span>
+                  </div>
+
+                <div class="list-box__coll">
+                  <button class="input-second-btn list-box__btn">
+                    Купить
+                  </button>
+                  <a href="#" class="list-box__morre">
+                    <svg width="6" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 3a3 3 0 11-6 0 3 3 0 016 0zM6 12a3 3 0 11-6 0 3 3 0 016 0zM6 21a3 3 0 11-6 0 3 3 0 016 0z" fill="#C7CED7"/>
+                    </svg>
+                  </a>
+                </div>
+
+                </div>
+                <div class="list-box__row">
+                  <div class="list-box__coll">
+                    <div class="checkbox">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" checked>
+                        <span></span>
+                      </label>
+                      <p class="status wait">
+                        Awaiting
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="list-box__coll">
+                     <span class="list-box__value">
+                       USA
+                     </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      USD
+                    </span>
+                 </div>
+
+                 <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Germany
+                    </span>
+                 </div>
+
+                 <div class="list-box__coll">
+                  <span class="list-box__value">
+                    19%
+                  </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                  <span class="list-box__value">
+                    WeltCar
+                  </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Directiory
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      San Francisco
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll grid-width">
+                    <span class="list-box__value">
+                      16th Ave, San Francisco, CA <br>
+                      94122, Соединенные Штаты
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Ford
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Mustang
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      2015
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      White
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Brown
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      1
+                    </span>
+                  </div>
+
+                <div class="list-box__coll">
+                  <button class="input-second-btn list-box__btn">
+                    Купить
+                  </button>
+                  <a href="#" class="list-box__morre">
+                    <svg width="6" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 3a3 3 0 11-6 0 3 3 0 016 0zM6 12a3 3 0 11-6 0 3 3 0 016 0zM6 21a3 3 0 11-6 0 3 3 0 016 0z" fill="#C7CED7"/>
+                    </svg>
+                  </a>
+                </div>
+
+                </div>
+                <div class="list-box__row">
+                  <div class="list-box__coll">
+                    <div class="checkbox">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" checked>
+                        <span></span>
+                      </label>
+                      <p class="status paid">
+                        Paid
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="list-box__coll">
+                     <span class="list-box__value">
+                       USA
+                     </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      USD
+                    </span>
+                 </div>
+
+                 <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Germany
+                    </span>
+                 </div>
+
+                 <div class="list-box__coll">
+                  <span class="list-box__value">
+                    19%
+                  </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                  <span class="list-box__value">
+                    WeltCar
+                  </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Directiory
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      San Francisco
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll grid-width">
+                    <span class="list-box__value">
+                      16th Ave, San Francisco, CA <br>
+                      94122, Соединенные Штаты
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Ford
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Mustang
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      2015
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      White
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Brown
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      1
+                    </span>
+                  </div>
+
+                <div class="list-box__coll">
+                  <button class="input-second-btn list-box__btn">
+                    Купить
+                  </button>
+                  <a href="#" class="list-box__morre">
+                    <svg width="6" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 3a3 3 0 11-6 0 3 3 0 016 0zM6 12a3 3 0 11-6 0 3 3 0 016 0zM6 21a3 3 0 11-6 0 3 3 0 016 0z" fill="#C7CED7"/>
+                    </svg>
+                  </a>
+                </div>
+
+                </div>
+                <div class="list-box__row">
+                  <div class="list-box__coll">
+                    <div class="checkbox">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" checked>
+                        <span></span>
+                      </label>
+                      <p class="status wait">
+                        Awaiting
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="list-box__coll">
+                     <span class="list-box__value">
+                       USA
+                     </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      USD
+                    </span>
+                 </div>
+
+                 <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Germany
+                    </span>
+                 </div>
+
+                 <div class="list-box__coll">
+                  <span class="list-box__value">
+                    19%
+                  </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                  <span class="list-box__value">
+                    WeltCar
+                  </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Directiory
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      San Francisco
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll grid-width">
+                    <span class="list-box__value">
+                      16th Ave, San Francisco, CA <br>
+                      94122, Соединенные Штаты
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Ford
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Mustang
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      2015
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      White
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Brown
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      1
+                    </span>
+                  </div>
+
+                <div class="list-box__coll">
+                  <button class="input-second-btn list-box__btn">
+                    Купить
+                  </button>
+                  <a href="#" class="list-box__morre">
+                    <svg width="6" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 3a3 3 0 11-6 0 3 3 0 016 0zM6 12a3 3 0 11-6 0 3 3 0 016 0zM6 21a3 3 0 11-6 0 3 3 0 016 0z" fill="#C7CED7"/>
+                    </svg>
+                  </a>
+                </div>
+
+                </div>
+                <div class="list-box__row">
+                  <div class="list-box__coll">
+                    <div class="checkbox">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" checked>
+                        <span></span>
+                      </label>
+                      <p class="status paid">
+                        Paid
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="list-box__coll">
+                     <span class="list-box__value">
+                       USA
+                     </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      USD
+                    </span>
+                 </div>
+
+                 <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Germany
+                    </span>
+                 </div>
+
+                 <div class="list-box__coll">
+                  <span class="list-box__value">
+                    19%
+                  </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                  <span class="list-box__value">
+                    WeltCar
+                  </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Directiory
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      San Francisco
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll grid-width">
+                    <span class="list-box__value">
+                      16th Ave, San Francisco, CA <br>
+                      94122, Соединенные Штаты
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Ford
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Mustang
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      2015
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      White
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Brown
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      1
+                    </span>
+                  </div>
+
+                <div class="list-box__coll">
+                  <button class="input-second-btn list-box__btn">
+                    Купить
+                  </button>
+                  <a href="#" class="list-box__morre">
+                    <svg width="6" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 3a3 3 0 11-6 0 3 3 0 016 0zM6 12a3 3 0 11-6 0 3 3 0 016 0zM6 21a3 3 0 11-6 0 3 3 0 016 0z" fill="#C7CED7"/>
+                    </svg>
+                  </a>
+                </div>
+
+                </div>
+                <div class="list-box__row">
+                  <div class="list-box__coll">
+                    <div class="checkbox">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" checked>
+                        <span></span>
+                      </label>
+                      <p class="status wait">
+                        Awaiting
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="list-box__coll">
+                     <span class="list-box__value">
+                       USA
+                     </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      USD
+                    </span>
+                 </div>
+
+                 <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Germany
+                    </span>
+                 </div>
+
+                 <div class="list-box__coll">
+                  <span class="list-box__value">
+                    19%
+                  </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                  <span class="list-box__value">
+                    WeltCar
+                  </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Directiory
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      San Francisco
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll grid-width">
+                    <span class="list-box__value">
+                      16th Ave, San Francisco, CA <br>
+                      94122, Соединенные Штаты
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Ford
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Mustang
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      2015
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      White
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Brown
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      1
+                    </span>
+                  </div>
+
+                <div class="list-box__coll">
+                  <button class="input-second-btn list-box__btn">
+                    Купить
+                  </button>
+                  <a href="#" class="list-box__morre">
+                    <svg width="6" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 3a3 3 0 11-6 0 3 3 0 016 0zM6 12a3 3 0 11-6 0 3 3 0 016 0zM6 21a3 3 0 11-6 0 3 3 0 016 0z" fill="#C7CED7"/>
+                    </svg>
+                  </a>
+                </div>
+
+                </div>
+                <div class="list-box__row">
+                  <div class="list-box__coll">
+                    <div class="checkbox">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" checked>
+                        <span></span>
+                      </label>
+                      <p class="status paid">
+                        Paid
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="list-box__coll">
+                     <span class="list-box__value">
+                       USA
+                     </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      USD
+                    </span>
+                 </div>
+
+                 <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Germany
+                    </span>
+                 </div>
+
+                 <div class="list-box__coll">
+                  <span class="list-box__value">
+                    19%
+                  </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                  <span class="list-box__value">
+                    WeltCar
+                  </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Directiory
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      San Francisco
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll grid-width">
+                    <span class="list-box__value">
+                      16th Ave, San Francisco, CA <br>
+                      94122, Соединенные Штаты
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Ford
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Mustang
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      2015
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      White
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Brown
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      1
+                    </span>
+                  </div>
+
+                <div class="list-box__coll">
+                  <button class="input-second-btn list-box__btn">
+                    Купить
+                  </button>
+                  <a href="#" class="list-box__morre">
+                    <svg width="6" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 3a3 3 0 11-6 0 3 3 0 016 0zM6 12a3 3 0 11-6 0 3 3 0 016 0zM6 21a3 3 0 11-6 0 3 3 0 016 0z" fill="#C7CED7"/>
+                    </svg>
+                  </a>
+                </div>
+
+                </div>
+                <div class="list-box__row">
+                  <div class="list-box__coll">
+                    <div class="checkbox">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" checked>
+                        <span></span>
+                      </label>
+                      <p class="status wait">
+                        Awaiting
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="list-box__coll">
+                     <span class="list-box__value">
+                       USA
+                     </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      USD
+                    </span>
+                 </div>
+
+                 <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Germany
+                    </span>
+                 </div>
+
+                 <div class="list-box__coll">
+                  <span class="list-box__value">
+                    19%
+                  </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                  <span class="list-box__value">
+                    WeltCar
+                  </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Directiory
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      San Francisco
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll grid-width">
+                    <span class="list-box__value">
+                      16th Ave, San Francisco, CA <br>
+                      94122, Соединенные Штаты
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Ford
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Mustang
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      2015
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      White
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      Brown
+                    </span>
+                  </div>
+
+                  <div class="list-box__coll">
+                    <span class="list-box__value">
+                      1
+                    </span>
+                  </div>
+
+                <div class="list-box__coll">
+                  <button class="input-second-btn list-box__btn">
+                    Купить
+                  </button>
+                  <a href="#" class="list-box__morre">
+                    <svg width="6" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 3a3 3 0 11-6 0 3 3 0 016 0zM6 12a3 3 0 11-6 0 3 3 0 016 0zM6 21a3 3 0 11-6 0 3 3 0 016 0z" fill="#C7CED7"/>
+                    </svg>
+                  </a>
+                </div>
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+              </div>
+            </div>
+          </section>
+
+          <footer>
+            <div class="container">
+              <div class="footer">
+                <div class="footer__item">
+                  <p class="footer__link">
+                    Copyright 2021. Worldcars Club
+                  </p>
+                  <a href="#" class="footer__link">
+                    Контактная информация
+                  </a>
+                </div>
+                <div class="footer__item">
+                  <a href="#" class="footer__link">
+                    Политика конфиденциальности
+                  </a>
+                  <a href="#" class="footer__link">
+                    Условия использования
+                  </a>
+                  <a href="#" class="footer__link">
+                    Разработка: ilab.md
+                  </a>
+                </div>
+              </div>
+            </div>
+          </footer>
+
+
+        </div>
+
+
+
+
+
+      </div>
+
+
+
+
+    </div>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/common.min.js"></script>
+  </body>
+</html>
