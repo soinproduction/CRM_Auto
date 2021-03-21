@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="Description" content=" default ">
+  <title>Auto card admin</title>
+  <script src="js/picturefill.min.js" async="async"></script>
+  <link rel="preload" href="fonts/Inter-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Inter-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+  <body>
+    <div class="container-fluid">
+      <div class="main-box">
+        <aside class="aside">
+          <div class="aside-logo">
+            <a href="#" class="aside-logo__link">
+              <svg width="81" height="86">
+                <use href="img/sprite/sprite.svg#logo"></use>
+              </svg>
+            </a>
+          </div>
+          <nav class="aside-nav">
+            <ul class="aside-nav__list">
+              <li class="aside-nav__item"><a href="#" class="aside-nav__link aside-nav__link--active">
+                <svg class="aside-nav__icon" width="25" height="19">
+                  <use href="img/sprite/sprite.svg#car"></use>
+                </svg>
+                <span class="aside-nav__name">
+                  Автомобили
+                </span>
+              </a></li>
+              <li class="aside-nav__item"><a href="#" class="aside-nav__link">
+                <svg class="aside-nav__icon" width="24" height="21">
+                  <use href="img/sprite/sprite.svg#users"></use>
+                </svg>
+                <span class="aside-nav__name">
+                  Пользователи
+                </span>
+              </a></li>
+              <li class="aside-nav__item"><a href="#" class="aside-nav__link">
+                <svg class="aside-nav__icon" width="25" height="19">
+                  <use href="img/sprite/sprite.svg#card"></use>
+                </svg>
+                <span class="aside-nav__name">
+                  Платежи
+                </span>
+              </a></li>
+              <li class="aside-nav__item"><a href="#" class="aside-nav__link">
+                <svg class="aside-nav__icon" width="21" height="25">
+                  <use href="img/sprite/sprite.svg#geo"></use>
+                </svg>
+                <span class="aside-nav__name">
+                  Location
+                </span>
+              </a></li>
+              <li class="aside-nav__item"><a href="#" class="aside-nav__link">
+                <svg class="aside-nav__icon" width="21" height="21">
+                  <use href="img/sprite/sprite.svg#sms"></use>
+                </svg>
+                <span class="aside-nav__name">
+                  Сообщения
+                </span>
+              </a></li>
+              <li class="aside-nav__item"><a href="#" class="aside-nav__link">
+                <svg class="aside-nav__icon" width="17" height="21">
+                  <use href="img/sprite/sprite.svg#book"></use>
+                </svg>
+                <span class="aside-nav__name">
+                  Booking
+                </span>
+              </a></li>
+            </ul>
+          </nav>
+          <div class="aside-help">
+            <a href="#" class="aside-help__link">
+              <svg class="aside-nav__icon" width="23" height="23">
+                <use href="img/sprite/sprite.svg#help"></use>
+              </svg>
+              <span class="aside-nav__name">
+                Помощь
+              </span>
+            </a>
+          </div>
+
+        </aside>
+        <div class="main-wrapper">
+          <header>
+            <div class="container">
+              <div class="header">
+                <div class="header-searh">
+                  <label class="header-searh__label">
+                    <button class="header-searh__btn">
+                      <svg class="header-searh__icon" width="20" height="21" >
+                        <use href="img/sprite/sprite.svg#searh"></use>
+                      </svg>
+                    </button>
+                    <input type="text" class="header-searh__input" placeholder="Поиск информации">
+                  </label>
+                </div>
+                <div class="header-right">
+                  <div class="header-right__support">
+                    <a href="#" class="header-right__link">
+                      <svg class="header-right__icon" width="23" height="23" >
+                        <use href="img/sprite/sprite.svg#help"></use>
+                      </svg>
+                      <span class="header-right__name">
+                        Поддержка
+                      </span>
+                    </a>
+                  </div>
+                  <div class="header-balance">
+                    <div class="header-balance__top accordion">
+                      <p class="header-balance__title">
+                        Балaнс:
+                        <span class="header-balance__value">
+                          343 988
+                        </span>
+                      </p>
+                      <svg class="header-balance__arrow" width="11" height="6"  >
+                        <use href="img/sprite/sprite.svg#down"></use>
+                      </svg>
+                    </div>
+                    <div class="header-balance__bottom panel">
+                      <div class="header-dropdown">
+                        <p class="header-balance__title">
+                          Балaнс:
+                          <span class="header-balance__value">
+                            343 988
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header-user">
+                    <div class="header-user__top accordion">
+                      <svg class="header-user__user" width="27" height="27">
+                        <use href="img/sprite/sprite.svg#user"></use>
+                      </svg>
+                      <p class="header-user__title">
+                        Максим Захарченко
+                      </p>
+                      <svg class="header-user__arrow" width="11" height="6">
+                        <use href="img/sprite/sprite.svg#down"></use>
+                      </svg>
+                    </div>
+                    <div class="header-user__bottom panel">
+                      <a href="#" class="header-dropdown">
+                          <svg class="header-user__user" width="27" height="27">
+                            <use href="img/sprite/sprite.svg#user"></use>
+                          </svg>
+                          <p class="header-user__title">
+                            Максим Захарченко
+                          </p>
+                      </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+          <section class="narrow-section">
+            <div class="container container--mode">
+              <div class="narrow-box">
+                <div class="narrow-box__top profile-box">
+                  <a href="#" class="info-back info-back--mode">
+                    <svg width="8" height="14" class="info-back__arrow">
+                      <use href="img/sprite/sprite.svg#back"></use>
+                    </svg>
+                  </a>
+                  <p class="date-info">
+                    Дата добавления: 12.03.2020
+                  </p>
+                </div>
+                <div class="narrow-body profile-body">
+                  <div class="narrow-body__top">
+                    <img src="img/user.png" alt="Профиль" class="narrow-body__img">
+                    <p class="narrow-body__name">
+                      Максим Захарченко
+                    </p>
+                    <p class="narrow-body__info">
+                      Supplier/Purchase manager
+                    </p>
+                    <p class="narrow-body__maill">
+                      maks345@gmail.com
+                    </p>
+                  </div>
+                  <div class="narrow-body__bottom">
+                    <label for="#" class="narrow-body__label">
+                      <input type="text" class="narrow-body__input" placeholder="Ваше имя">
+                    </label>
+                    <label for="#" class="narrow-body__label">
+                      <input type="text" class="narrow-body__input" placeholder="Название компании">
+                    </label>
+                    <label for="#" class="narrow-body__label">
+                      <input type="email" class="narrow-body__input" placeholder="E-mail">
+                    </label>
+                    <label for="#" class="narrow-body__label">
+                      <input type="tel" class="narrow-body__input" placeholder="Номер телефона">
+                    </label>
+                    <label for="#" class="narrow-body__label">
+                      <input type="number" class="narrow-body__input" placeholder="Whatsapp">
+                    </label>
+                    <label for="#" class="narrow-body__label">
+                      <input type="text" class="narrow-body__input" placeholder="Wechat">
+                    </label>
+                  </div>
+                  <button class="narrow-body__btn">
+                    Сохранить
+                  </button>
+                  <a href="#" class="remove-status">
+                    Изменить пароль или статус
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <footer>
+            <div class="container">
+              <div class="footer">
+                <div class="footer__item">
+                  <p class="footer__link">
+                    Copyright 2021. Worldcars Club
+                  </p>
+                  <a href="#" class="footer__link">
+                    Контактная информация
+                  </a>
+                </div>
+                <div class="footer__item">
+                  <a href="#" class="footer__link">
+                    Политика конфиденциальности
+                  </a>
+                  <a href="#" class="footer__link">
+                    Условия использования
+                  </a>
+                  <a href="#" class="footer__link">
+                    Разработка: ilab.md
+                  </a>
+                </div>
+              </div>
+            </div>
+          </footer>
+
+
+        </div>
+
+
+
+
+
+      </div>
+
+
+
+
+    </div>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/common.min.js"></script>
+  </body>
+</html>

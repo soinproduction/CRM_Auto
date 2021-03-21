@@ -96,7 +96,7 @@
 }
 
 .list-title {
-  padding: 0 85px 20px 35px;
+  padding: 0 100px 20px 50px;
   display: flex;
   justify-content: space-between;
   text-align: left;
@@ -138,9 +138,9 @@
   width: 105px;
 }
 
-// .list-title__name:nth-child(8), .list-box__coll:nth-child(8 ) {
-//   width: 95px;
-// }
+.list-title__name:nth-child(8), .list-box__coll:nth-child(8 ) {
+  width: 95px;
+}
 
 .list-title__name:nth-child(9), .list-box__coll:nth-child(9) {
   width: 200px;
@@ -170,6 +170,12 @@
     width: 250px;
     text-align: center;
   }
+}
+
+.list-box__value--active {
+  background: #C9DAFF;
+  border-radius: 3px;
+  padding: 0 5px;
 }
 
 

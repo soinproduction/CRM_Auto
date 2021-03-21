@@ -65,24 +65,3 @@
   background: #FFE24D;
 }
 
-.list-box__value {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  color: #101820;
-}
-
-.list-box__coll {
-  position: relative;
-  z-index: 1;
-}
-
-.list-box__btn {
-  margin-right: 24px;
-}
-
-.list-box__coll:last-child {
-  display: flex;
-  align-items: center;
-}

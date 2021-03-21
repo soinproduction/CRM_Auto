@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="Description" content=" default ">
+  <title>Auto card admin</title>
+  <script src="js/picturefill.min.js" async="async"></script>
+  <link rel="preload" href="fonts/Inter-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Inter-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+  <body>
+    <div class="container-fluid">
+      <div class="main-box">
+        <aside class="aside">
+          <div class="aside-logo">
+            <a href="#" class="aside-logo__link">
+              <svg width="81" height="86">
+                <use href="img/sprite/sprite.svg#logo"></use>
+              </svg>
+            </a>
+          </div>
+          <nav class="aside-nav">
+            <ul class="aside-nav__list">
+              <li class="aside-nav__item"><a href="#" class="aside-nav__link aside-nav__link--active">
+                <svg class="aside-nav__icon" width="25" height="19">
+                  <use href="img/sprite/sprite.svg#car"></use>
+                </svg>
+                <span class="aside-nav__name">
+                  Автомобили
+                </span>
+              </a></li>
+              <li class="aside-nav__item"><a href="#" class="aside-nav__link">
+                <svg class="aside-nav__icon" width="24" height="21">
+                  <use href="img/sprite/sprite.svg#users"></use>
+                </svg>
+                <span class="aside-nav__name">
+                  Пользователи
+                </span>
+              </a></li>
+              <li class="aside-nav__item"><a href="#" class="aside-nav__link">
+                <svg class="aside-nav__icon" width="25" height="19">
+                  <use href="img/sprite/sprite.svg#card"></use>
+                </svg>
+                <span class="aside-nav__name">
+                  Платежи
+                </span>
+              </a></li>
+              <li class="aside-nav__item"><a href="#" class="aside-nav__link">
+                <svg class="aside-nav__icon" width="21" height="25">
+                  <use href="img/sprite/sprite.svg#geo"></use>
+                </svg>
+                <span class="aside-nav__name">
+                  Location
+                </span>
+              </a></li>
+              <li class="aside-nav__item"><a href="#" class="aside-nav__link">
+                <svg class="aside-nav__icon" width="21" height="21">
+                  <use href="img/sprite/sprite.svg#sms"></use>
+                </svg>
+                <span class="aside-nav__name">
+                  Сообщения
+                </span>
+              </a></li>
+              <li class="aside-nav__item"><a href="#" class="aside-nav__link">
+                <svg class="aside-nav__icon" width="17" height="21">
+                  <use href="img/sprite/sprite.svg#book"></use>
+                </svg>
+                <span class="aside-nav__name">
+                  Booking
+                </span>
+              </a></li>
+            </ul>
+          </nav>
+          <div class="aside-help">
+            <a href="#" class="aside-help__link">
+              <svg class="aside-nav__icon" width="23" height="23">
+                <use href="img/sprite/sprite.svg#help"></use>
+              </svg>
+              <span class="aside-nav__name">
+                Помощь
+              </span>
+            </a>
+          </div>
+
+        </aside>
+        <div class="main-wrapper">
+          <header>
+            <div class="container">
+              <div class="header">
+                <div class="header-searh">
+                  <label class="header-searh__label">
+                    <button class="header-searh__btn">
+                      <svg class="header-searh__icon" width="20" height="21" >
+                        <use href="img/sprite/sprite.svg#searh"></use>
+                      </svg>
+                    </button>
+                    <input type="text" class="header-searh__input" placeholder="Поиск информации">
+                  </label>
+                </div>
+                <div class="header-right">
+                  <div class="header-right__support">
+                    <a href="#" class="header-right__link">
+                      <svg class="header-right__icon" width="23" height="23" >
+                        <use href="img/sprite/sprite.svg#help"></use>
+                      </svg>
+                      <span class="header-right__name">
+                        Поддержка
+                      </span>
+                    </a>
+                  </div>
+                  <div class="header-balance">
+                    <div class="header-balance__top accordion">
+                      <p class="header-balance__title">
+                        Балaнс:
+                        <span class="header-balance__value">
+                          343 988
+                        </span>
+                      </p>
+                      <svg class="header-balance__arrow" width="11" height="6"  >
+                        <use href="img/sprite/sprite.svg#down"></use>
+                      </svg>
+                    </div>
+                    <div class="header-balance__bottom panel">
+                      <div class="header-dropdown">
+                        <p class="header-balance__title">
+                          Балaнс:
+                          <span class="header-balance__value">
+                            343 988
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header-user">
+                    <div class="header-user__top accordion">
+                      <svg class="header-user__user" width="27" height="27">
+                        <use href="img/sprite/sprite.svg#user"></use>
+                      </svg>
+                      <p class="header-user__title">
+                        Максим Захарченко
+                      </p>
+                      <svg class="header-user__arrow" width="11" height="6">
+                        <use href="img/sprite/sprite.svg#down"></use>
+                      </svg>
+                    </div>
+                    <div class="header-user__bottom panel">
+                      <a href="#" class="header-dropdown">
+                          <svg class="header-user__user" width="27" height="27">
+                            <use href="img/sprite/sprite.svg#user"></use>
+                          </svg>
+                          <p class="header-user__title">
+                            Максим Захарченко
+                          </p>
+                      </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+          <section class="narrow-section">
+            <div class="container container--mode">
+              <div class="narrow-box">
+                <div class="narrow-box__top">
+                  <a href="#" class="info-back info-back--mode">
+                    <svg width="8" height="14" class="info-back__arrow">
+                      <use href="img/sprite/sprite.svg#back"></use>
+                    </svg>
+                  </a>
+                  <p class="date-info">
+                    До 27.12.2021
+                  </p>
+                </div>
+                <div class="narrow-body">
+                  <div class="narrow-body__top">
+                    <p class="narrow-body__name">
+                      Бронь автомобиля
+                    </p>
+                    <div class="narrow-body__card">
+                      <img src="img/model.png" alt="марка" class="narrow-body__icon">
+                      <div class="narrow-body__inner">
+                        <img src="img/car.png" alt="марка" class="narrow-body__car">
+                        <div class="narrow-body__item">
+                          <h2 class="narrow-body__tit">
+                            Toyota Yaris, 2015
+                          </h2>
+                          <p class="narrow-body__information">
+                            Стоимость: 10 789 USD
+                          </p>
+                          <p class="narrow-body__information">
+                            Продавец: Company
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="narrow-body__bottom">
+                    <div class="input-container">
+                      <div class="input-box">
+                        <label for="#" class="input-box__label">
+                          <input type="text" class="input-box__input" placeholder="Payment conditions">
+                        </label>
+                        <div class="input-dropdown">
+                          <div class="input-dropdown__top accordion">
+                            <svg class="input-dropdown__arrow" width="11" height="6"  >
+                              <use href="img/sprite/sprite.svg#down"></use>
+                            </svg>
+                          </div>
+                          <div class="input-dropdown__wrapper panel">
+                            <ul class="input-dropdown__list">
+                              <li class="input-dropdown__item">
+                                <a href="#" class="input-dropdown__link">
+                                  Тема вопроса
+                                </a>
+                              </li>
+                              <li class="input-dropdown__item">
+                                <a href="#" class="input-dropdown__link">
+                                  Тема вопроса
+                                </a>
+                              </li>
+                              <li class="input-dropdown__item">
+                                <a href="#" class="input-dropdown__link">
+                                  Тема вопроса
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input-container">
+                      <textarea class="input-container__area input-container__area--mode" cols="30" rows="10" placeholder="Ваши комментарии"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="narrow-body__checkbox">
+                    <div class="checkbox">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" checked>
+                        <span></span>
+                      </label>
+                      <p class="status">
+                        Я согласен
+                        <a href="#" class="status__link">
+                          условиями предоставления и политикой
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+
+                  <button class="narrow-body__btn narrow-body__btn--mode">
+                    Забронировать
+                  </button>
+                  <a href="#" class="cancel">
+                    Отмена
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <footer>
+            <div class="container">
+              <div class="footer">
+                <div class="footer__item">
+                  <p class="footer__link">
+                    Copyright 2021. Worldcars Club
+                  </p>
+                  <a href="#" class="footer__link">
+                    Контактная информация
+                  </a>
+                </div>
+                <div class="footer__item">
+                  <a href="#" class="footer__link">
+                    Политика конфиденциальности
+                  </a>
+                  <a href="#" class="footer__link">
+                    Условия использования
+                  </a>
+                  <a href="#" class="footer__link">
+                    Разработка: ilab.md
+                  </a>
+                </div>
+              </div>
+            </div>
+          </footer>
+
+
+        </div>
+
+
+
+
+
+      </div>
+
+
+
+
+    </div>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/common.min.js"></script>
+  </body>
+</html>

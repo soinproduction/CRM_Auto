@@ -104,13 +104,16 @@ input[type=number] {
 
 .panel.show {
   display: block;
-  z-index: 500;
 }
 
 .container {
   max-width: 1660px;
   width: 100%;
   margin: 0 auto;
+  &--mode {
+    max-width: 820px;
+    width: 100%;
+  }
 }
 
 .container-fluid {

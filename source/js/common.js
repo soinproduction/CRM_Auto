@@ -1,12 +1,14 @@
 
-  $('.delivery-slider').slick({
+  $('.slider-main').slick({
     accessibility: true,
     arrows: true,
-    dots: true,
+    dots: false,
     speed: 1500,
+    slidesToShow:1,
+    // asNavFor: '.slider-nav',
     dotsClass: "delivery-slider__dots",
-    prevArrow: '<div class="delivery-slider-left delivery-slider__button"><img src="img/chevron-left.svg" alt="Слайд"></div>',
-    nextArrow: '<div class="delivery-slider-right delivery-slider__button"><img src="img/chevron-right.svg" alt="Слайд"></div>',
+    prevArrow: '<div class="main-slider-left main-slider__button"><img src="img/arrow-left.png" alt="Слайд"></div>',
+    nextArrow: '<div class="main-slider-right main-slider__button"><img src="img/arrow-right.png" alt="Слайд"></div>',
     responsive: [
       {
         breakpoint: 1199,
@@ -48,6 +50,63 @@
       }
     ]
   });
+
+  // $('.slider-nav').slick({
+  //   accessibility: true,
+  //   arrows: false,
+  //   dots: false,
+  //   Infinity:false,
+  //   speed: 1500,
+  //   draggable: false,
+  //   slidesToShow:9,
+  //   rows:2,
+  //   asNavFor: '.slider-main',
+  //   variableWidth:true,
+  //   draggable: false,
+  //   swipe: false,
+  //   responsive: [
+  //     {
+  //       breakpoint: 1199,
+  //       settings: {
+  //         slidesToShow: 1,
+  //         slidesToScroll: 1,
+  //         arrows: true,
+  //         dots: false,
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 992,
+  //       settings: {
+  //         slidesToShow: 1,
+  //         arrows: false,
+  //         dots: true,
+  //         slidesToScroll: 1
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 767,
+  //       settings: {
+  //         slidesToShow: 1,
+  //         arrows: false,
+  //         slidesToScroll: 1,
+  //         dots: true,
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 575,
+  //       settings: {
+  //         slidesToShow: 1,
+  //         slidesToScroll: 1,
+  //         dots: true,
+  //         arrows: false,
+  //         centerMode: true,
+  //         centerPadding: '0px',
+  //       }
+  //     }
+  //   ]
+  // });
+
+
   var acc = document.getElementsByClassName("accordion"),
   i;
 for (i = 0; i < acc.length; i++) {
