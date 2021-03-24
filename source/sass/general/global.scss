@@ -99,11 +99,12 @@ input[type=number] {
   display: none;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  z-index: 50;
 }
 
 .panel.show {
   display: block;
+  z-index: 1000;
+  position: absolute;
 }
 
 .container {
